@@ -1,0 +1,8 @@
+<!-- This is our Root View  starting view of our app -->
+<!-- which contains the Container control to contain other views inside  -->
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="kpit.fin.ap.controller.App">
+ <!-- container control -->
+  <!-- <App id="idAppCon" ></App> -->
+
+  <SplitApp id = "idAppCon" ></SplitApp>
+</mvc:View >

@@ -1,0 +1,25 @@
+<core:FragmentDefinition
+   xmlns="sap.m"
+   xmlns:f="sap.ui.layout.form"
+   xmlns:core="sap.ui.core">
+
+                    <!-- Mandatory to select one  -->
+                    <Select id="dropdown" items="{/cities}">
+                        <items>
+                           <core:Item text="{name}" key="{name}" />
+                       </items>
+                       </Select>
+                     <!-- combobox = input + dropdown, allow to  the  entre data which is  not there   -->
+                         <ComboBox id ="combobox" items="{/cities}" >
+                           <items>
+                              <core:Item text="{name}" key="{name}" />
+                           </items>
+                         </ComboBox>
+                     <!-- Allow multiple  selection of data -->
+                     <MultiComboBox id ="multiplecombobox" items="{/cities}" >
+                        <items>
+                           <core:Item text="{name}" key="{name}" />
+                        </items>
+                      </MultiComboBox>
+   
+</core:FragmentDefinition>
